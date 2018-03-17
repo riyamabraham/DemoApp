@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <head>
     <title>Student Bio</title>
+    <style>
+        body {
+            color: black;
+            background: rgb(187, 190, 206);
+            font-size: 18px;
+            line-height: 100%;
+            text-align: justify;
+        }
+
+        header{
+            text-align: center;
+            color:white;
+            background:black;
+            font-size: 30px;
+            padding:5px;
+        }
+
+        .container {
+             width: 90%;
+             margin-left: 100px;
+             margin-top: 50px;
+             
+        }
+        a{
+            color:rgb(211, 42, 27);
+        }
+
+        #image,#mainbio,#contactinfo{
+            float: left;
+        }
+        #mainbio {
+            width: 65%;
+         
+        }
+
+        #contactinfo {
+            width: 30%;
+            
+        }
+
+        #image {
+            width: 200px;
+            height: 200px;
+            margin-right: 20px;
+        }
+
+
+
+    </style>
+    
 </head>
 <body>
-    <h1>Student Bio</h1>
-    <h2>Riya Mary Abraham</h2>
-    <img src="riya.jpg">
+
+    <header><h1>Student Bio</h1></header>
+    
+    <div class="container">
+            <section id="mainbio">
+                <h2>Riya Mary Abraham</h2>
+                <img id="image" src="riya.jpg" alt="profile image">
+    
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
          Aenean eu interdum risus. Pellentesque habitant morbi
         tristique senectus et netus et malesuada fames ac turpis
@@ -20,11 +75,19 @@
          parturient montes, nascetur ridiculus mus. Donec ex nunc, maximus eget 
          suscipit in, pulvinar ut tortor. Praesent velit augue, elementum eget 
          iaculis eu, venenatis ut massa. Aliquam ac convallis eros, ut iaculis sem.</p>
+
+    </section>
+
+    <section id="contactinfo">
+         
          <h2>Contact Info</h2>
             <ul>
-                <li>Email :<a href="#">someplace@gmail.com</a></li>
-                <li>Github :<a href="#">sampleName</a></li>
-                <li>Portfolio :<a href="#">comingsoon</a></li>
+                <li><strong>Email :</strong><a href="#">someplace@gmail.com</a></li>
+                <li><strong>Github :</strong><a href="#">sampleName</a></li>
+                <li><strong>Portfolio :</strong><a href="#">comingsoon</a></li>
             </ul>
+
+    </section>
+        </div>
 </body>
 </html>
